@@ -1,0 +1,58 @@
+{% extends "index.html" %}
+
+{% block style %}
+    <style>
+        .welcome-section {
+            display: flex;
+
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            height: 100vh;
+            width: 100vw;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: 700;
+
+            color: #F9D342;
+        }
+
+        /* .subtitle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } */
+
+        .subtitle p {
+            color: #fff;
+
+            display: inline-block;
+            text-align: center;
+
+            max-width: 50vw;
+        }
+    </style>
+{% endblock %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block content %}
+    <div class="welcome-section">
+        <h1>Hello World!</h1>
+        <div class="subtitle">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem adipisci
+                ipsum ducimus? Nesciunt facilis, sapiente quis quo inventore optio unde
+                quisquam dolorum architecto blanditiis fugit minima nulla saepe eaque
+                eveniet. Illum officia voluptatibus quasi laborum dolor alias, provident
+                sapiente fugiat possimus accusamus corporis ipsum accusantium. Iusto minima
+                fuga atque animi?
+            </p>
+        </div>
+    </div>
+{% endblock %}
